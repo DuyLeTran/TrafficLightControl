@@ -80,8 +80,8 @@ Make sure the `sumo` and `sumo-gui` binaries are accessible from your PATH (or s
 ### 2. Clone the repository
 
 ```bash
-git clone <repository-url>
-cd XaloHaNoi_DoXuanHop_final
+git clone https://github.com/DuyLeTran/TrafficLightControl
+cd TrafficLightControl
 ```
 
 ### 3. Create and activate a virtual environment (recommended)
