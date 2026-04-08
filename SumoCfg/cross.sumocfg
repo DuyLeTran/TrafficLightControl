@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- SUMO Configuration File for Cross Intersection Simulation -->
+<!-- Generated based on network.net.xml and route.rou.xml -->
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <!-- Network file -->
+        <net-file value="net.net.xml"/>
+        
+        <!-- Route file -->
+        <!-- <route-files value="balance.rou.xml"/> -->
+        <route-files value="train_small.rou.xml"/>
+        
+        <!-- Additional definitions (vTypes, etc.) -->
+        <additional-files value="vtypes.add.xml"/>
+
+        <!-- <additional-files value="types.add.xml"/> -->
+
+        <gui-settings-file value="rwcustom.xml"/>
+    </input>
+
+    <time>
+        <!-- Simulation start time -->
+        <begin value="0"/>
+        
+        <!-- Simulation end time (-1 means run until no vehicles remain) -->
+        <end value="-1"/>
+        
+        <!-- Time step in seconds -->
+        <step-length value="0.1"/>
+    </time>
+
+    <processing>
+        <!-- Ignore junction conflicts -->
+        <ignore-junction-blocker value="0"/>
+        
+        <!-- Collision checking -->
+        <collision.action value="none"/>
+        <collision.check-junctions value="true"/>
+        <collision.mingap-factor value="2.5"/>
+
+        <step-method.ballistic value="true"/>
+        
+        <!-- Prevent teleporting - vehicles will wait/block instead -->
+        <time-to-teleport value="-1"/>
+
+        <!-- Lane change model -->
+        <!-- <lanechange.duration value="2"/> -->
+
+        <lateral-resolution value="1" />
+        <ignore-route-errors value="true"/>
+        
+        <!-- <time-to-teleport value="150"/> 
+        
+        <collision.action>none</collision.action>
+        <collision.check-junctions value="true"/>
+        <collision.mingap-factor value="1.0"/> -->
+
+    </processing>
+
+    <routing>
+        <!-- Route assignment algorithm -->
+        <routing-algorithm value="dijkstra"/>
+    </routing>
+
+    <random_number>
+        <!-- Random seed for reproducibility -->
+        <seed value="42"/>
+    </random_number>
+
+    <report>
+        <!-- Verbose output -->
+        <verbose value="true"/>
+        
+        <!-- Print statistics -->
+        <print-options value="true"/>
+        
+        <!-- Duration statistics -->
+        <duration-log.statistics value="true"/>
+        
+        <!-- No step log -->
+        <no-step-log value="true"/>
+    </report>
+
+    <gui_only>
+        <!-- GUI settings -->
+        <start value="false"/>
+        <!-- Delay before starting -->
+        <delay value="100"/>
+
+        <!-- <gui-settings-view value="default"/> -->
+    </gui_only>
+
+</configuration>
+

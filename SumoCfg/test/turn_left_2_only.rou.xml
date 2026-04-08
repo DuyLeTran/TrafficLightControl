@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+
+
+    <!-- East flows -->
+
+    <flow id="E1S_bike"      type="motorbike"     begin="0" from="E1_to_E" to="C_to_S"   departLane="1" number="200"    period="5.0"     color="255,0,150"/>
+    <flow id="E2S_bike"      type="motorbike"     begin="0" from="E2_to_E" to="C_to_S"   departLane="1" number="200"    period="5.0"     color="255,100,0"/>
+    
+    <flow id="E1S_car_1"      type="car"          begin="0" from="E1_to_E" to="C_to_S"   departLane="1" arrivalLane="random" number="150"      period="10.0"     color="200,150,50"/> 
+    <flow id="E2S_car_1"      type="car"          begin="0" from="E2_to_E" to="C_to_S"   departLane="1" arrivalLane="random" number="150"      period="10.0"     color="180,150,80"/>
+   
+    <!-- West flows -->
+
+    <flow id="WN_bike"      type="motorbike"     begin="0" from="W_to_C" to="C_to_N"   departLane="1" number="400"    period="5.0"     color="0,30,255"/>
+    <flow id="WN_car"      type="car"            begin="0" from="W_to_C" to="C_to_N"   departLane="1" arrivalLane="random"   number="300"      period="10.0"     color="150,50,50"/>
+
+</routes>

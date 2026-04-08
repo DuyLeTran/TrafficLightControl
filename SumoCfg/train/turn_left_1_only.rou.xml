@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- South flows -->
+    
+    <flow id="SW_bike"      type="motorbike"     begin="0" from="S1_to_C" to="C_to_W"   departLane="1" number="30"    period="5.0"     color="200,0,200"/>
+    <flow id="SW_car_1"     type="car"          begin="0" from="S1_to_C"  to="C_to_W"    departLane="1" number="15"      period="10.0"     color="120,120,255"/>
+    <flow id="SW_car_2"     type="car"          begin="0" from="S_to_C"   to="C_to_W"    departLane="2" number="18"      period="10.0"     color="255,120,120"/>
+
+
+    <!-- North flows -->
+    
+    <flow id="NE1_bike"     type="motorbike"     begin="0" from="N1_to_C" to="E_to_E1"  departLane="1" number="20"     period="5.0"     color="0,128,255"/>
+    <flow id="NE2_bike"     type="motorbike"     begin="0" from="N1_to_C" to="E_to_E2"  departLane="1" number="20"     period="5.0"     color="128,0,255"/>
+    
+    
+    <flow id="NE1_car_1"     type="car"          begin="0" from="N1_to_C" to="E_to_E1"   departLane="1" number="5"       period="10.0"     color="50,255,180"/>
+    <flow id="NE1_car_2"     type="car"          begin="0" from="N_to_C"  to="E_to_E1"   departLane="2" number="18"      period="10.0"     color="255,50,180"/>
+    <flow id="NE2_car_1"     type="car"          begin="0" from="N1_to_C" to="E_to_E2"   departLane="1" number="5"      period="10.0"     color="50,150,255"/>
+    <flow id="NE2_car_2"     type="car"          begin="0" from="N_to_C"  to="E_to_E2"   departLane="2" number="18"      period="10.0"     color="150,50,255"/>
+
+    
+
+</routes>

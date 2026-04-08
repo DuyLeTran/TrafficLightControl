@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- South flows -->
+    
+    <flow id="SN_bike"      type="motorbike"     begin="0" from="S1_to_C" to="C_to_N"   departLane="0" number="40"    period="5.0"     color="255,0,0"/>
+   
+    <flow id="SN_car_1"      type="car"          begin="0" from="S1_to_C" to="C_to_N"   departLane="0" number="7"      period="10.0"     color="255,180,60"/> 
+    <flow id="SN_car_2"      type="car"          begin="0" from="S_to_C"  to="C_to_N"   departLane="1" number="18"      period="10.0"     color="180,80,200"/>
+    <flow id="SN_car_3"      type="car"          begin="0" from="S_to_C"  to="C_to_N"   departLane="1" number="18"      period="10.0"     color="0,200,150"/>
+    
+    <flow id="SN_delivery_1"      type="delivery"          begin="0" from="S_to_C"  to="C_to_N"   departLane="1" number="5"      period="15.0"     color="200,60,255"/>
+    <flow id="SN_delivery_2"      type="delivery"          begin="0" from="S_to_C"  to="C_to_N"   departLane="1" number="5"      period="15.0"     color="0,180,80"/>
+    
+
+    <flow id="SN_truck_1"      type="truck"          begin="0" from="S_to_C"  to="C_to_N"         departLane="1" number="5"      period="20.0"     color="80,0,160"/>
+    <flow id="SN_truck_2"      type="truck"          begin="0" from="S_to_C"  to="C_to_N"         departLane="1" number="5"      period="20.0"     color="0,120,60"/>
+    
+    
+    <flow id="SN_bus_1"      type="bus"          begin="0" from="S_to_C"  to="C_to_N"   departLane="1" number="5"      period="30.0"     color="200,160,0"/>
+    <flow id="SN_bus_2"      type="bus"          begin="0" from="S_to_C"  to="C_to_N"   departLane="1" number="5"      period="30.0"     color="0,200,255"/>
+
+    <!-- North flows -->
+    
+    <flow id="NS_bike"      type="motorbike"     begin="0" from="N1_to_C" to="C_to_S"   departLane="0" number="40"    period="5.0"     color="0,0,255"/>
+ 
+    <flow id="NS_car_1"      type="car"          begin="0" from="N1_to_C" to="C_to_S"   departLane="0" number="7"      period="10.0"     color="255,150,50"/> 
+    <flow id="NS_car_2"      type="car"          begin="0" from="N_to_C"  to="C_to_S"   departLane="1" number="18"      period="10.0"     color="150,0,255"/>
+    <flow id="NS_car_3"      type="car"          begin="0" from="N_to_C"  to="C_to_S"   departLane="1" number="18"      period="10.0"     color="0,150,200"/>
+    
+
+    <flow id="NS_delivery_1"      type="delivery"          begin="0" from="N_to_C"  to="C_to_S"   departLane="1" number="5"      period="15.0"     color="255,180,0"/>
+    <flow id="NS_delivery_2"      type="delivery"          begin="0" from="N_to_C"  to="C_to_S"   departLane="1" number="5"      period="15.0"     color="0,150,0"/>
+    
+
+    <flow id="NS_truck_1"      type="truck"          begin="0" from="N_to_C"  to="C_to_S"         departLane="1" number="5"      period="20.0"     color="0,0,120"/>
+    <flow id="NS_truck_2"      type="truck"          begin="0" from="N_to_C"  to="C_to_S"         departLane="1" number="5"      period="20.0"     color="60,180,0"/>
+    
+
+    <flow id="NS_bus_1"      type="bus"          begin="0" from="N_to_C"  to="C_to_S"   departLane="1" number="5"      period="30.0"     color="255,255,150"/>
+    <flow id="NS_bus_2"      type="bus"          begin="0" from="N_to_C"  to="C_to_S"   departLane="1" number="5"      period="30.0"     color="150,255,255"/>
+</routes>

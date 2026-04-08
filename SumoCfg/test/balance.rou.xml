@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- South flows -->
+    
+    <flow id="SN_bike"      type="motorbike"     begin="0" from="S1_to_C" to="C_to_N"   departLane="0" number="400"    period="5.0"     color="255,0,0"/>
+    <flow id="SE1_bike"     type="motorbike"     begin="0" from="S1_to_C" to="E_to_E1"  departLane="0" number="200"     period="5.0"     color="255,64,0"/>
+    <flow id="SE2_bike"     type="motorbike"     begin="0" from="S1_to_C" to="E_to_E2"  departLane="0" number="200"     period="5.0"     color="255,0,64"/>
+    <flow id="SW_bike"      type="motorbike"     begin="0" from="S1_to_C" to="C_to_W"   departLane="1" number="300"    period="5.0"     color="200,0,200"/>
+    
+    
+    <flow id="SN_car_1"      type="car"          begin="0" from="S1_to_C" to="C_to_N"   departLane="0" number="70"      period="10.0"     color="255,180,60"/> 
+    <flow id="SN_car_2"      type="car"          begin="0" from="S_to_C"  to="C_to_N"   departLane="1" number="180"      period="10.0"     color="180,80,200"/>
+    <flow id="SN_car_3"      type="car"          begin="0" from="S_to_C"  to="C_to_N"   departLane="1" number="180"      period="10.0"     color="0,200,150"/>
+    
+    <flow id="SE1_car_1"     type="car"          begin="0" from="S1_to_C" to="E_to_E1"   departLane="0" number="70"       period="10.0"     color="0,150,255"/>
+    <flow id="SE1_car_2"     type="car"          begin="0" from="S_to_C"  to="E_to_E1"   departLane="0" number="90"      period="10.0"     color="60,255,140"/>
+    <flow id="SE2_car_1"     type="car"          begin="0" from="S1_to_C" to="E_to_E2"   departLane="0" number="70"      period="10.0"     color="0,100,200"/>
+    <flow id="SE2_car_2"     type="car"          begin="0" from="S_to_C"  to="E_to_E2"   departLane="0" number="90"      period="10.0"     color="40,60,180"/>
+
+    <flow id="SW_car_1"     type="car"          begin="0" from="S1_to_C"  to="C_to_W"    departLane="1" number="150"      period="10.0"     color="120,120,255"/>
+    <flow id="SW_car_2"     type="car"          begin="0" from="S_to_C"   to="C_to_W"    departLane="2" number="180"      period="10.0"     color="255,120,120"/>
+
+    
+ 
+    <flow id="SN_delivery_1"      type="delivery"          begin="0" from="S_to_C"  to="C_to_N"   departLane="1" number="50"      period="15.0"     color="200,60,255"/>
+    <flow id="SN_delivery_2"      type="delivery"          begin="0" from="S_to_C"  to="C_to_N"   departLane="1" number="50"      period="15.0"     color="0,180,80"/>
+    
+    
+    <flow id="SN_truck_1"      type="truck"          begin="0" from="S_to_C"  to="C_to_N"         departLane="1" number="12"      period="20.0"     color="80,0,160"/>
+    <flow id="SN_truck_2"      type="truck"          begin="0" from="S_to_C"  to="C_to_N"         departLane="1" number="12"      period="20.0"     color="0,120,60"/>
+    
+    
+    
+    <flow id="SN_bus_1"      type="bus"          begin="0" from="S_to_C"  to="C_to_N"   departLane="1" number="15"      period="30.0"     color="200,160,0"/>
+    <flow id="SN_bus_2"      type="bus"          begin="0" from="S_to_C"  to="C_to_N"   departLane="1" number="15"      period="30.0"     color="0,200,255"/>
+
+    <!-- North flows -->
+    
+    <flow id="NS_bike"      type="motorbike"     begin="0" from="N1_to_C" to="C_to_S"   departLane="0" number="400"    period="5.0"     color="0,0,255"/>
+    <flow id="NE1_bike"     type="motorbike"     begin="0" from="N1_to_C" to="E_to_E1"  departLane="1" number="200"     period="5.0"     color="0,128,255"/>
+    <flow id="NE2_bike"     type="motorbike"     begin="0" from="N1_to_C" to="E_to_E2"  departLane="1" number="200"     period="5.0"     color="128,0,255"/>
+    <flow id="NW_bike"      type="motorbike"     begin="0" from="N1_to_C" to="C_to_W"   departLane="0" number="300"    period="5.0"     color="0,0,180"/>
+    
+
+    <flow id="NS_car_1"      type="car"          begin="0" from="N1_to_C" to="C_to_S"   departLane="0" number="70"      period="10.0"     color="255,150,50"/> 
+    <flow id="NS_car_2"      type="car"          begin="0" from="N_to_C"  to="C_to_S"   departLane="1" number="180"      period="10.0"     color="150,0,255"/>
+    <flow id="NS_car_3"      type="car"          begin="0" from="N_to_C"  to="C_to_S"   departLane="1" number="180"      period="10.0"     color="0,150,200"/>
+    
+    <flow id="NE1_car_1"     type="car"          begin="0" from="N1_to_C" to="E_to_E1"   departLane="1" number="50"       period="10.0"     color="50,255,180"/>
+    <flow id="NE1_car_2"     type="car"          begin="0" from="N_to_C"  to="E_to_E1"   departLane="2" number="180"      period="10.0"     color="255,50,180"/>
+    <flow id="NE2_car_1"     type="car"          begin="0" from="N1_to_C" to="E_to_E2"   departLane="1" number="50"      period="10.0"     color="50,150,255"/>
+    <flow id="NE2_car_2"     type="car"          begin="0" from="N_to_C"  to="E_to_E2"   departLane="2" number="180"      period="10.0"     color="150,50,255"/>
+
+    <flow id="NW_car_1"     type="car"          begin="0" from="N1_to_C"  to="C_to_W"    departLane="0" number="70"      period="10.0"     color="0,150,50"/>
+    <flow id="NW_car_2"     type="car"          begin="0" from="N_to_C"   to="C_to_W"    departLane="0" number="180"      period="10.0"     color="150,200,0"/>
+
+    
+ 
+    <flow id="NS_delivery_1"      type="delivery"          begin="0" from="N_to_C"  to="C_to_S"   departLane="1" number="50"      period="15.0"     color="255,180,0"/>
+    <flow id="NS_delivery_2"      type="delivery"          begin="0" from="N_to_C"  to="C_to_S"   departLane="1" number="50"      period="15.0"     color="0,150,0"/>
+    
+    
+    
+    
+    <flow id="NS_truck_1"      type="truck"          begin="0" from="N_to_C"  to="C_to_S"         departLane="1" number="12"      period="20.0"     color="0,0,120"/>
+    <flow id="NS_truck_2"      type="truck"          begin="0" from="N_to_C"  to="C_to_S"         departLane="1" number="12"      period="20.0"     color="60,180,0"/>
+    
+    
+    <flow id="NS_bus_1"      type="bus"          begin="0" from="N_to_C"  to="C_to_S"   departLane="1" number="15"      period="30.0"     color="255,255,150"/>
+    <flow id="NS_bus_2"      type="bus"          begin="0" from="N_to_C"  to="C_to_S"   departLane="1" number="15"      period="30.0"     color="150,255,255"/>
+
+
+
+    <!-- East flows -->
+
+    <flow id="E1S_bike"      type="motorbike"     begin="0" from="E1_to_E" to="C_to_S"   departLane="1" number="200"    period="5.0"     color="255,0,150"/>
+    <flow id="E1W_bike"      type="motorbike"     begin="0" from="E1_to_E" to="C_to_W"   departLane="0" arrivalLane="1" number="200"    period="5.0"     color="255,50,0"/>
+    <flow id="E1N_bike"      type="motorbike"     begin="0" from="E1_to_E" to="C_to_N"   departLane="0" number="400"    period="5.0"     color="0,50,255"/>
+    
+    <flow id="E2S_bike"      type="motorbike"     begin="0" from="E2_to_E" to="C_to_S"   departLane="1" number="200"    period="5.0"     color="255,100,0"/>
+    <flow id="E2W_bike"      type="motorbike"     begin="0" from="E2_to_E" to="C_to_W"   departLane="0" arrivalLane="1" number="200"    period="5.0"     color="255,0,200"/>
+    <flow id="E2N_bike"      type="motorbike"     begin="0" from="E2_to_E" to="C_to_N"   departLane="0" number="400"    period="5.0"     color="0,100,255"/>
+
+
+
+    <flow id="E1S_car_1"      type="car"          begin="0" from="E1_to_E" to="C_to_S"   departLane="1" arrivalLane="random" number="150"      period="10.0"     color="200,150,50"/> 
+    <flow id="E1W_car_1"      type="car"          begin="0" from="E1_to_E" to="C_to_W"   departLane="0" arrivalLane="1" number="150"      period="10.0"     color="200,80,50"/>
+    <flow id="E1N_car_1"      type="car"          begin="0" from="E1_to_E" to="C_to_N"   departLane="0" arrivalLane="1" number="150"      period="10.0"     color="200,50,120"/>
+
+    <flow id="E2S_car_1"      type="car"          begin="0" from="E2_to_E" to="C_to_S"   departLane="1" arrivalLane="random" number="150"      period="10.0"     color="180,150,80"/>
+    <flow id="E2W_car_1"      type="car"          begin="0" from="E2_to_E" to="C_to_W"   departLane="0" arrivalLane="1" number="150"      period="10.0"     color="180,80,120"/>
+    <flow id="E2N_car_1"      type="car"          begin="0" from="E2_to_E" to="C_to_N"   departLane="0" arrivalLane="1" number="150"      period="10.0"     color="180,50,180"/>
+    
+    <!-- West flows -->
+
+    <flow id="WS_bike"       type="motorbike"     begin="0" from="W_to_C" to="C_to_S"   departLane="0" number="200"    period="5.0"     color="255,30,30"/>
+    <flow id="WN_bike"       type="motorbike"     begin="0" from="W_to_C" to="C_to_N"   departLane="1" number="400"    period="5.0"     color="0,30,255"/>
+    <flow id="WE1_bike"      type="motorbike"    begin="0" from="W_to_C" to="E_to_E1"   departLane="0" arrivalLane="1" number="200"    period="5.0"     color="30,0,255"/>
+    <flow id="WE2_bike"      type="motorbike"    begin="0" from="W_to_C" to="E_to_E2"   departLane="0" arrivalLane="1" number="200"    period="5.0"     color="60,0,255"/>
+    
+
+    <flow id="WS_car"       type="car"          begin="0" from="W_to_C" to="C_to_S"   departLane="0" arrivalLane="1"   number="150"      period="10.0"     color="150,150,50"/> 
+    <flow id="WN_car"       type="car"          begin="0" from="W_to_C" to="C_to_N"   departLane="1" arrivalLane="random"   number="300"      period="10.0"     color="150,50,50"/>
+    <flow id="WE1_car"      type="car"          begin="0" from="W_to_C" to="E_to_E1"   departLane="0" arrivalLane="1" number="150"      period="10.0"     color="150,80,200"/>
+    <flow id="WE2_car"      type="car"          begin="0" from="W_to_C" to="E_to_E2"   departLane="0" arrivalLane="1" number="150"      period="10.0"     color="120,50,180"/>
+
+</routes>

@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# PyTorch model checkpoints (keep only the best model)
+DQN/dqn_traffic_ep*.pt
+DQN/replay_buffer*.pkl
+
+# SUMO output files
+*.xml.gz
+*.log
+tripinfo*.xml
+summary*.xml
+*.sumo.cfg.bak
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE / Editor
+.vscode/
+.idea/
+*.suo
+*.user
+Thumbs.db
+.DS_Store
+
+# Logs & temp
+*.log
+*.tmp
+*.bak
+logs/
+runs/

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+
+    <!--
+    Tham số vType và giá trị mặc định (nếu không được định nghĩa):
+    width:                   Chiều rộng thân xe (m)                                   | - Mặc định: 1.8
+    minGap:                  Khoảng cách dọc tối thiểu với xe phía trước (m)          | - Mặc định: 2.5
+    tau:                     Thời gian phản ứng của người lái (s) -                   | - Mặc định: 1.0
+    sigma:                   Độ nhiễu hành vi ngẫu nhiên (0: ổn định, 1: bất ổn)      | - Mặc định: 0.5
+    speedFactor:             Hệ số nhân tốc độ giới hạn của làn đường                 | - Mặc định: 1.0
+    speedDev:                Độ lệch chuẩn của tốc độ ngẫu nhiên giữa các xe          | - Mặc định: 0.1
+    carFollowModel:          Mô hình bám đuôi (ví dụ IDM, Krauss)                     | - Mặc định: Krauss
+    minGapLat:               Khoảng cách ngang tối thiểu với xe bên cạnh (m)          | - Mặc định: 0.6
+    latAlignment:            Vị trí căn chỉnh trong làn (center, left, right)         | - Mặc định: center
+    lcKeepRight:             Xu hướng giữ làn phải (giá trị âm: ít giữ)               | - Mặc định: 1.0
+    lcSpeedGain:             Mức độ ưu tiên đổi làn để đạt tốc độ cao hơn             | - Mặc định: 1.0
+    lcStrategic:             Điểm ưu tiên đổi làn cho chiến lược dài hạn              | - Mặc định: 1.0
+    lcCooperative:           Mức độ hợp tác khi đổi làn với xe khác                   | - Mặc định: 1.0
+    lcPushy:                 Độ hung hăng khi chen làn (0: hiền, 1: hung hăng)        | - Mặc định: 0.0
+    lcAssertive:             Khả năng giữ quyết tâm khi đổi làn                       | - Mặc định: 1.0
+    jmIgnoreJunctionFoeProb: Xác suất bỏ qua quyền ưu tiên tại giao lộ                | - Mặc định: 0.0
+    impatience:              Độ sốt ruột của tài xế (cao -> dễ vượt, đổi làn)         | - Mặc định: 0.0
+    maxSpeed:                Giới hạn tốc độ tối đa của xe (m/s)                      | - Mặc định: 55.56 (200 km/h)
+    accel:                   Gia tốc cực đại khi tăng tốc (m/s²)                      | - Mặc định: 2.6
+    decel:                   Gia tốc âm cực đại khi phanh (m/s²)                      | - Mặc định: 4
+    -->
+
+    <!-- Vehicle type definitions -->
+    <vType id="car" vClass="passenger"
+           width = "1.8" maxSpeed="11.11"
+           tau = "1.0" sigma = "0.0" minGap = "2.0" minGapLat = "1.0" latAlignment = "center"
+           accel = "2.6" decel = "4.0"
+           speedFactor = "1.0" speedDev = "0.0"
+           lcAssertive = "1.0" lcPushy = "0.0" lcCooperative = "1.0"
+           lcKeepRight = "0" lcStrategic = "2.0" lcSpeedGain = "0.5"  lcSublane="0.0"
+           impatience = "0.0" jmIgnoreFoeProb = "0.0" jmIgnoreJunctionFoeProb = "0.0" jmTimegapMinor = "1.0" jmStoplineGap = "0.5"
+    />
+
+    <!-- Motorbike type definition -->
+    <vType id="motorbike" vClass="motorcycle" width="0.8"
+           minGap="1.5" tau="1.0" sigma="0.8" speedFactor="1.1" speedDev="0.15" carFollowModel="IDM"
+           minGapLat="0.8" latAlignment="right" lcKeepRight="0" lcSpeedGain="1.0" lcPushy="0.6"
+           jmIgnoreJunctionFoeProb="0.7" impatience="0.8"/>
+
+           
+    <!-- Truck type definition -->
+    <vType id="delivery" vClass="delivery"
+           accel="1.5" decel="3.0" minGap="4.0" tau="2.5" sigma="0.8" speedFactor="0.9" speedDev="0.05"
+           carFollowModel="IDM" latAlignment="center" lcKeepRight="0" lcSpeedGain="1.0" lcPushy="0.6"
+           jmIgnoreJunctionFoeProb="0.7" impatience="0.8"/>
+
+
+    <vType id="truck" vClass="truck"
+        width="2.0" length="9.0" minGap="3.0" 
+        maxSpeed="11.11" accel="1.8" decel="4.0" emergencyDecel="8.0" 
+        speedFactor="0.80" carFollowModel="IDM"/>
+
+    <vType id="bus" vClass="bus"
+        width="2.4" length="10.0" minGap="4.0" 
+        maxSpeed="11.11" accel="1.2" decel="3.5" emergencyDecel="7.0" 
+        speedFactor="0.75" carFollowModel="IDM"/>
+</additional>
