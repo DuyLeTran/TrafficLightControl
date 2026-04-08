@@ -1,6 +1,6 @@
-# Traffic Signal Control using DQN
+# Traffic Light Control using DQN
 
-A simulation-based **traffic signal control** system for a real Ho Chi Minh intersection, built with Python, PyTorch, and SUMO. A **Deep Q-Network (DQN)** agent learns to minimize vehicle queue lengths and waiting times by dynamically controlling traffic light phases.
+A simulation-based **traffic light control** system for a real Ho Chi Minh intersection, built with Python, PyTorch, and SUMO. A **Deep Q-Network (DQN)** agent learns to minimize vehicle queue lengths and waiting times by dynamically controlling traffic light phases.
 
 <p align="center">
 <img src="demo.gif" width="720" alt="DQN Traffic Demo">
@@ -13,7 +13,7 @@ A simulation-based **traffic signal control** system for a real Ho Chi Minh inte
 
 This project is accompanied by a research report describing the problem formulation, environment design, reward shaping, and experimental results. If you want to learn more about the technical approach — including the state representation, action space, reward function, and multi-route training strategy — please refer to the report.
 
-The report covers: [**"Adaptive Traffic Signal Control Using Deep Reinforcement Learning"**](https://drive.google.com/file/d/15fspocR7gb2rX6SwEOKGjYtgHLz9GRnJ/view?usp=sharing)
+The report covers: [**Proposal of an intelligent traffic light control system based on real-time vehicle density detection**](https://drive.google.com/file/d/15fspocR7gb2rX6SwEOKGjYtgHLz9GRnJ/view?usp=sharing)
 
 - Road network modelling of a real Ho Chi Minh City intersection using SUMO
 - Gymnasium-based RL environment with 57-dimensional state space
