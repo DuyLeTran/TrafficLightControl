@@ -324,4 +324,4 @@ This project is for educational and research purposes. Please contact the author
 
 ---
 
-*Developed as part of a research project on Reinforcement Learning for Adaptive Traffic Signal Control.*
+*Developed as part of a research project on Reinforcement Learning for Traffic Light Control.*
